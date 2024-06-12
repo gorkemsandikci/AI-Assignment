@@ -67,7 +67,7 @@ class AdminController extends Controller
             'password' => Hash::make($request->get('password')),
         ]);
 
-        return redirect()->route('admin.login');
+        return redirect()->route('admin.showLoginForm');
     }
 
     public function logout()
