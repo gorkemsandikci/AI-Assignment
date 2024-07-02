@@ -26,7 +26,7 @@ class AuthRequest extends FormRequest
             'deviceUuid' => 'required|unique:users,device_uuid',
         ];
     }
-    public function messages()
+    public function messages(): array
     {
         return [
             'deviceName.required' => 'Device name is required',
